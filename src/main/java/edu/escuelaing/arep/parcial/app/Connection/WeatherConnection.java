@@ -8,8 +8,16 @@ import com.squareup.okhttp.Response;
 
 import java.io.IOException;
 
+/**
+ * @author Alan Marin
+ */
 public class WeatherConnection {
 
+    /**
+     * Obtiene informacion de la API
+     * @param city
+     * @return
+     */
     public JsonObject getWeatherbyCity(String city) {
         Request request = new Request.Builder()
                 .url("http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=d729e17844904bad642984f1d42ef559")

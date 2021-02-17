@@ -1,6 +1,7 @@
-# LinkedList for Mean and Standar Deviation
+# AREP Parcial T1
 
-This project focus on how to deploied a webapp using heroku and the importance of has a good "Procfile" to run local or cloud any project and as a sample there is a webapp where you can calculate the mean and standard deviation from a set of real numbers that you can create. 
+This project focus on get information from the https://home.openweathermap.org/api_keys and then send by web in Json type using spark.
+
 ## Getting Started
 
 Open your comand console or cmd and write or copy the comand below.
@@ -38,14 +39,6 @@ If you want to run the appweb on a local port, you migth install herokuCli and t
 
 ```
 heroku local web
-```
-or for windows:
-```
-java  -cp target/classes;target/dependency/* edu.escuelaing.arep.heroku.app.SparkWebApp
-```
-for Unix:
-```
-java $JAVA_OPTS -cp target/classes:target/dependency/* edu.escuelaing.arep.heroku.app.SparkWebApp
 ```
 
 Use the next comand to know the result of the tests
