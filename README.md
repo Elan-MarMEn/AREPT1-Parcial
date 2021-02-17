@@ -7,7 +7,7 @@ This project focus on get information from the https://home.openweathermap.org/a
 Open your comand console or cmd and write or copy the comand below.
 
 ```
-git clone https://github.com/Elan-MarMEn/HerokuCalulator.git
+git clone https://github.com/Elan-MarMEn/AREPT1-Parcial.git
 ```
 
 ### Prerequisites
