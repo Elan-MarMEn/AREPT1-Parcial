@@ -1,5 +1,7 @@
 package edu.escuelaing.arep.parcial.app;
 
+import edu.escuelaing.arep.parcial.app.Connection.WeatherConnection;
+
 import static spark.Spark.*;
 
 public class SparkWebServer {
@@ -9,9 +11,15 @@ public class SparkWebServer {
         port(getPort());
         staticFiles.location("/public");
 
-        get("/hello", (request, response) ->
-            "prueba"
-        );
+        WeatherConnection weatherConnection = new WeatherConnection();
+
+        get("/clima", (request, response) ->{
+            request.queryParams("lugar");
+            System.out.println(request.queryParams("lugar"));
+            return request.queryParams("lugar");
+//            return weatherConnection.getWeatherbyCity(request.queryParams("lugar"));
+        });
+
 
     }
 
